@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://base44.com/logo_v2.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="description" content="TradeCheck — Better Decisions. Better Traders. One last check before your risk. AI-powered trade decision intelligence for intraday traders." />
+    <meta name="theme-color" content="#0A0E14" />
+    <meta property="og:title" content="TradeCheck — Better Decisions. Better Traders." />
+    <meta property="og:description" content="Review trades before risking money. Learn from every outcome. Build your trading edge through behavioural intelligence." />
+    <meta property="og:type" content="website" />
+    <title>TradeCheck — Better Decisions. Better Traders.</title>
+    <script>
+      (function() {
+        var theme = localStorage.getItem('theme') || 'dark';
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
