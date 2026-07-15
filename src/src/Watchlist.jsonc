@@ -1,0 +1,47 @@
+{
+  "name": "Watchlist",
+  "type": "object",
+  "properties": {
+    "markets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "alert_breaking_news": {
+      "type": "boolean",
+      "default": true
+    },
+    "alert_economic_events": {
+      "type": "boolean",
+      "default": true
+    },
+    "alert_price_movement": {
+      "type": "boolean",
+      "default": false
+    },
+    "alert_volatility_spike": {
+      "type": "boolean",
+      "default": false
+    },
+    "alert_central_bank": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  },
+  "required": []
+}
