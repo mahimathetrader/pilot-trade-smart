@@ -1,0 +1,68 @@
+{
+  "name": "WeeklyCoaching",
+  "type": "object",
+  "properties": {
+    "week_start": {
+      "type": "string",
+      "format": "date"
+    },
+    "week_end": {
+      "type": "string",
+      "format": "date"
+    },
+    "discipline_score": {
+      "type": "number"
+    },
+    "execution_quality": {
+      "type": "string"
+    },
+    "best_trading_hours": {
+      "type": "string"
+    },
+    "worst_trading_hours": {
+      "type": "string"
+    },
+    "recurring_mistakes": {
+      "type": "string"
+    },
+    "strengths": {
+      "type": "string"
+    },
+    "risk_habits": {
+      "type": "string"
+    },
+    "emotional_patterns": {
+      "type": "string"
+    },
+    "improvement_trends": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "total_trades": {
+      "type": "number"
+    },
+    "win_rate": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "week_start",
+    "week_end"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}
