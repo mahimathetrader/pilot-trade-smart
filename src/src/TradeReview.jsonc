@@ -1,0 +1,160 @@
+{
+  "name": "TradeReview",
+  "type": "object",
+  "properties": {
+    "market": {
+      "type": "string",
+      "enum": [
+        "gold",
+        "silver",
+        "crude_oil",
+        "natural_gas",
+        "nifty",
+        "bank_nifty"
+      ]
+    },
+    "timeframe": {
+      "type": "string",
+      "enum": [
+        "1m",
+        "3m",
+        "5m",
+        "15m",
+        "30m",
+        "1h",
+        "4h",
+        "1D"
+      ]
+    },
+    "trade_direction": {
+      "type": "string",
+      "enum": [
+        "long",
+        "short",
+        "neutral"
+      ]
+    },
+    "entry_price": {
+      "type": "number"
+    },
+    "stop_loss": {
+      "type": "number"
+    },
+    "target": {
+      "type": "number"
+    },
+    "trade_thesis": {
+      "type": "string"
+    },
+    "screenshot_url": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "closed"
+      ],
+      "default": "open"
+    },
+    "trade_quality_score": {
+      "type": "number"
+    },
+    "confidence_score": {
+      "type": "number"
+    },
+    "trend_analysis": {
+      "type": "string"
+    },
+    "market_structure": {
+      "type": "string"
+    },
+    "support_resistance": {
+      "type": "string"
+    },
+    "momentum": {
+      "type": "string"
+    },
+    "risk_assessment": {
+      "type": "string"
+    },
+    "risk_reward_analysis": {
+      "type": "string"
+    },
+    "market_context": {
+      "type": "string"
+    },
+    "news_summary": {
+      "type": "string"
+    },
+    "economic_events": {
+      "type": "string"
+    },
+    "bullish_scenario": {
+      "type": "string"
+    },
+    "bearish_scenario": {
+      "type": "string"
+    },
+    "neutral_scenario": {
+      "type": "string"
+    },
+    "missing_information": {
+      "type": "string"
+    },
+    "trade_checklist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "educational_explanation": {
+      "type": "string"
+    },
+    "outcome": {
+      "type": "string",
+      "enum": [
+        "open",
+        "win",
+        "loss",
+        "breakeven"
+      ],
+      "default": "open"
+    },
+    "actual_exit_price": {
+      "type": "number"
+    },
+    "pnl": {
+      "type": "number"
+    },
+    "emotional_state": {
+      "type": "string"
+    },
+    "post_trade_notes": {
+      "type": "string"
+    },
+    "post_trade_analysis": {
+      "type": "string"
+    },
+    "post_trade_lessons": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "market"
+  ],
+  "rls": {
+    "create": {
+      "created_by_id": "{{user.id}}"
+    },
+    "read": {
+      "created_by_id": "{{user.id}}"
+    },
+    "update": {
+      "created_by_id": "{{user.id}}"
+    },
+    "delete": {
+      "created_by_id": "{{user.id}}"
+    }
+  }
+}
