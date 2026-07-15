@@ -1,0 +1,36 @@
+{
+  "name": "TraderIQ",
+  "type": "object",
+  "properties": {
+    "overall_score": {
+      "type": "number"
+    },
+    "planning_score": {
+      "type": "number"
+    },
+    "consistency_score": {
+      "type": "number"
+    },
+    "risk_management_score": {
+      "type": "number"
+    },
+    "execution_score": {
+      "type": "number"
+    },
+    "learning_score": {
+      "type": "number"
+    },
+    "discipline_score": {
+      "type": "number"
+    },
+    "review_habit_score": {
+      "type": "number"
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "improvement_trend": {
+      "type": "string"
+    }
+  }
+}
